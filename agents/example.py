@@ -6,6 +6,7 @@ from agents.base import BaseAgent
 
 class ExampleAgent(BaseAgent):
     def __init__(self, config):
+        super().__init__(config)
         self.config = config
         self.run()
 
