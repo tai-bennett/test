@@ -10,4 +10,4 @@ class ExampleAgent(BaseAgent):
         self.run()
 
     def run(self):
-        self.loggger.info("Running agent " + self.config.name + "...")
+        self.logger.info("Running agent " + self.config.name + "...")
