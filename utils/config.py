@@ -73,10 +73,10 @@ def process_config(json_file):
     # making sure that you have provided the exp_name.
     try:
         print(" *************************************** ")
-        print("The experiment name is {}".format(config.exp_name))
+        print("The experiment name is {}".format(config.name))
         print(" *************************************** ")
     except AttributeError:
-        print("ERROR!!..Please provide the exp_name in json file..")
+        print("ERROR!!..Please provide the name in json file..")
         exit(-1)
 
     # create some important directories to be used for that experiment.
