@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 from datetime import datetime
-
+import boto3
 from agents.base import BaseAgent
 
 
