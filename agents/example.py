@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+from datetime import datetime
 
 from agents.base import BaseAgent
 
@@ -12,3 +13,12 @@ class ExampleAgent(BaseAgent):
 
     def run(self):
         self.logger.info("Running agent " + self.config.name + "...")
+        now = datetime.utcnow().isoformat()
+        mystring = f"The time the agent was run was {now}\n"
+
+        localfilename = "output.txt"
+        with open(localfilename, "w") as text_file:
+            text_file.write(mystring)
+
+        s3 = boto3.client("s3")
+        s3.upload_file(localfilename, self.config.bucket_name, self.config.object_key)

@@ -2,4 +2,7 @@
     "name": "example_experiemnt",
     "agent": "ExampleAgent",
     "random": "apples"
+
+    "s3bucket_name": "test-my-ml-weights",
+    "object_key": "foo.txt"
 }
