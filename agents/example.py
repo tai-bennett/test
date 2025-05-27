@@ -21,4 +21,4 @@ class ExampleAgent(BaseAgent):
             text_file.write(mystring)
 
         s3 = boto3.client("s3")
-        s3.upload_file(localfilename, self.config.bucket_name, self.config.object_key)
+        s3.upload_file(localfilename, self.s3config.bucket_name, self.config.object_key)
