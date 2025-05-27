@@ -2,3 +2,4 @@ easydict
 pandas
 numpy
 boto3
+botocore

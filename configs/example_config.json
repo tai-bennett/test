@@ -4,5 +4,5 @@
     "random": "apples",
 
     "s3bucket_name": "test-my-ml-weights",
-    "object_key": "foo.txt"
+    "object_key": "foo2.txt"
 }
